@@ -14,9 +14,9 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="sticky top-0 bg-black py-4 sm:py-6 w-full mt-0">
+  <header class="w-full">
     <nav
-      class="container px-4 md:px-6 lg:px-8 mx-auto max-w-large flex items-center justify-between"
+      class="container z-10 bg-black py-4 sm:py-6 w-full mt-0 sticky top-0 px-4 md:px-6 lg:px-8 mx-auto max-w-large flex items-center justify-between"
     >
       <div class="shrink-0 w-32">
         <img src="/logo.svg" width="196" height="56" alt="" />
@@ -24,7 +24,7 @@ const toggleMenu = () => {
 
       <ul
         :class="[isOpenMenu ? 'left-0' : 'left-[-100%]']"
-        class="flex items-center duration-200 md:left-0 md:relative md:top-0 md:flex-row md:h-auto md:w-auto absolute top-[72px] flex-col justify-center w-full h-[calc(100vh-72px)] text-xl text-secondary gap-6"
+        class="flex items-center duration-200 bg-black md:left-0 md:relative md:top-0 md:flex-row md:h-auto md:w-auto absolute top-[72px] flex-col justify-center w-full h-[calc(100vh-72px)] text-xl text-secondary gap-6"
       >
         <li class="hover:text-primary duration-150">
           <a href="#">Use Cases</a>
@@ -63,10 +63,56 @@ const toggleMenu = () => {
         </CButton>
       </div>
     </nav>
+
+    <div class="w-full container max-w-large mx-auto px-4 md:px-6 lg:px-8">
+      <div class="w-full">
+        <h1
+          class="text-white text-[42px] text-center sm:text-[56px] md:text-[64px] lg:text-[84px] xl:text-[96px] min-[1440px]:text-[112px] font-bold leading-[110%] flex flex-col justify-center items-center my-20 lg:my-24 xl:my-[140px]"
+        >
+          Own your audience.
+          <span class="hero-text-gradient">So you don't lose them.</span>
+        </h1>
+      </div>
+      <div class="w-full max-w-[694px] mx-auto">
+        <p
+          class="text-white text-[20px] text-center leading-tight sm:text-[24px] md:text-[32px] lg:text-[40px]"
+        >
+          Turn your audience into email and text message subscribers.
+        </p>
+        <div
+          class="flex items-center gap-4 mt-6 sm:*:mt-8 md:mt-10 lg:mt-12 xl:mt-[50px] sm:gap-5 md:gap-[26px]"
+        >
+          <CButton size="lg" variant="primary">Get Started Now</CButton>
+          <CButton size="lg" variant="outline">View A Demo</CButton>
+        </div>
+
+        <p
+          class="w-full text-center gap-[10px] mt-5 flex items-center text-base md:text-xl xl:text-2xl justify-center"
+        >
+          <span
+            class="relative w-7 h-7 z-0 flex items-center justify-center bg-[#0FC65C] bg-opacity-50 rounded-full animate-pulse"
+          >
+            <span class="w-4 h-4 inline-block rounded-full bg-[#0FC65C]"></span>
+          </span>
+
+          <span class="text-white font-bold">1000+</span>
+          <span class="text-secondary">creators have already started</span>
+        </p>
+      </div>
+    </div>
   </header>
 </template>
 
 <style scoped>
+.hero-text-gradient {
+  animation: flow 4s ease-in-out infinite;
+  background: linear-gradient(-50deg, #904e95, #b05fb6, #e73c7e, #ee7752);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Menu Button 1 */
 
 .menu-btn {
