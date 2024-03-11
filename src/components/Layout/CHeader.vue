@@ -50,6 +50,7 @@ const toggleMenu = () => {
           <CButton
             role="button"
             variant="primary"
+            aria-label="Burger Menu"
             class="md:hidden w-10 h-10 sm:h-12 sm:w-12 flex items-center justify-center"
             @click="toggleMenu"
           >
@@ -87,8 +88,12 @@ const toggleMenu = () => {
         <div
           class="flex items-center gap-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-[50px] sm:gap-5 md:gap-[26px]"
         >
-          <CButton size="lg" role="button" variant="primary">Get Started Now</CButton>
-          <CButton size="lg" role="button" variant="outline">View A Demo</CButton>
+          <CButton size="lg" role="button" variant="primary"
+            >Get Started Now</CButton
+          >
+          <CButton size="lg" role="button" variant="outline"
+            >View A Demo</CButton
+          >
         </div>
 
         <p
