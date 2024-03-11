@@ -285,22 +285,22 @@ const stepSecondData = {
         <div class="w-20 h-20 md:w-auto md:h-auto">
           <img width="164" height="151" src="/Logo.png" alt="Logo image" />
         </div>
-        <CTitle class="text-center max-w-[1236px]" size="extralarge"
+        <CTitle class="text-center max-w-[1236px] mt-8" size="extralarge"
           >Get Started Now</CTitle
         >
 
         <p
-          class="text-[18px] text-center sm:text-2xl md:text-3xl text-white lg:text-[43px]"
+          class="text-xl mt-6 text-center sm:text-2xl md:text-3xl text-white lg:text-[43px]"
         >
           Setup is easy and takes under 5 minutes.
         </p>
 
-        <CButton class="mt-4" size="lg" variant="primary"
+        <CButton class="mt-6" size="lg" variant="primary"
           >Get Started Now</CButton
         >
 
         <p
-          class="w-full text-center gap-[10px] sm:flex-row flex-col mt-4 flex items-center text-base md:text-xl xl:text-2xl justify-center"
+          class="w-full text-center gap-[10px] sm:flex-row flex-col mt-6 flex items-center text-base md:text-xl xl:text-2xl justify-center"
         >
           <span class="flex items-center gap-[10px]">
             <span

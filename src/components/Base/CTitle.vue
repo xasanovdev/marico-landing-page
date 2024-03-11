@@ -13,6 +13,6 @@ const variantSizes = {
   large:
     "text-[36px] md:text-[40px] lg:text-[56px] xl:text-[80px] leading-tight",
   extralarge:
-    "text-[40px] md:text-[56px] lg:text-[72px] xl:text-[100px] leading-tight",
+    "text-[40px] md:text-[48px] lg:text-[64px] xl:text-[80px] min-w-[1440px]:text-[100px] leading-tight",
 };
 </script>
