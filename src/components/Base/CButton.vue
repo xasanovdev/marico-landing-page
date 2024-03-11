@@ -25,8 +25,8 @@ const props = defineProps({
 const styles = {
   primary: "bg-primary text-white hover:bg-blue-700 active:bg-blue-600",
   outline:
-    "text-[#707070] border border-[#707070] hover:text-white hover:border-white",
-  default: "text-[#707070] hover:text-white",
+    "text-secondary border border-secondary hover:text-white hover:border-white",
+  default: "text-secondary hover:text-white",
 };
 
 const sizes = {

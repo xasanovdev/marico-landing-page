@@ -68,7 +68,9 @@ const stepSecondData = {
     <CHeader />
 
     <main class="w-full mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40">
-      <div class="container max-w-large mx-auto px-4 md:px-6 lg:px-8">
+      <!-- ========= Reasons Section Start ========= -->
+
+      <section class="container max-w-large mx-auto px-4 md:px-6 lg:px-8">
         <div class="w-full">
           <CTitle size="default" class="text-center"
             >Why Creators Love Marico</CTitle
@@ -105,10 +107,11 @@ const stepSecondData = {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- ========= Reasons Section End ========= -->
 
       <!-- ========= Step 1 Start ========= -->
-      <div class="w-full">
+      <section class="w-full">
         <div
           class="container max-w-large mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40 mx-auto px-4 md:px-6 lg:px-8"
         >
@@ -133,11 +136,11 @@ const stepSecondData = {
           :list="stepFirstData?.list"
           :imageLink="stepFirstData?.imageLink"
         />
-      </div>
+      </section>
       <!-- ========= Step 1 End ========= -->
 
       <!-- ========= Step 2 Start ========= -->
-      <div class="w-full">
+      <section class="w-full">
         <div
           class="container max-w-large mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40 mx-auto px-4 md:px-6 lg:px-8"
         >
@@ -165,7 +168,12 @@ const stepSecondData = {
               </CTitle>
 
               <div class="relative mt-4 right-0 bottom-0">
-                <img src="/phone.png" width="788" height="338" />
+                <img
+                  src="/phone.webp"
+                  width="788"
+                  height="338"
+                  alt="Iphone Screen Image"
+                />
               </div>
             </div>
 
@@ -194,11 +202,12 @@ const stepSecondData = {
             >
           </div>
         </div>
-      </div>
+      </section>
       <!-- ========= Step 2 End ========= -->
+
       <!-- ========= Step 3 Start ========= -->
 
-      <div class="w-full">
+      <section class="w-full">
         <div
           class="container max-w-large mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40 mx-auto px-4 md:px-6 lg:px-8"
         >
@@ -223,53 +232,54 @@ const stepSecondData = {
           :list="stepSecondData?.list"
           :imageLink="stepSecondData?.imageLink"
         />
-      </div>
-
+      </section>
       <!-- ========= Step 3 End ========= -->
-      <!-- ========= Step 4 Start ========= -->
-      <div class="w-full mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40">
+
+      <!-- ========= Experts Agree Section Start ========= -->
+      <section class="w-full mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40">
         <CTitle class="text-center" size="default">Experts Agree</CTitle>
         <div
           class="w-full flex items-center md:flex-row mt-[50px] flex-col relative"
         >
           <img
             class="md:w-1/2 w-full h-full object-cover"
-            src="/twitter1.png"
+            src="/twitter1.webp"
             width="913"
             height="441"
             alt="Twitter screenshots about morico project"
           />
           <img
             class="md:w-1/2 w-full h-full"
-            src="/twitter2.png"
+            src="/twitter2.webp"
             width="913"
             height="441"
             alt="Twitter screenshots about morico project"
           />
         </div>
-      </div>
-      <!-- ========= Step 4 End ========= -->
+      </section>
+      <!-- ========= Experts Agree Section End ========= -->
 
-      <!-- ========= Step 5 Start ========= -->
-      <div
+      <!-- ========= Control Of Their Audience Start ========= -->
+      <section
         class="w-full flex items-center justify-center mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40"
       >
-        <CTitle class="text-center absolute max-w-[1236px]" size="medium"
-          >We've helped over 1,000 creatorsre claim control of their
+        <CTitle class="text-center px-4 absolute max-w-[1236px]" size="medium"
+          >We've helped over 1,000 creators are claim control of their
           audience.</CTitle
         >
 
         <img
           class="right-0 w-full h-auto"
-          src="/users.png"
-          srcset="/users.png 1x, /users@2x.png 2x"
+          src="/users.webp"
+          srcset="/users.webp 1x, /users@2x.webp 2x"
           alt="background users emoji image"
         />
-      </div>
-      <!-- ========= Step 5 End ========= -->
+      </section>
 
-      <!-- ========= Step 6 Start ========= -->
-      <div
+      <!-- ========= Control Of Their Audience End ========= -->
+
+      <!-- ========= Get Started Now Section Start ========= -->
+      <section
         class="w-full flex flex-col items-center container max-w-large mx-auto px-4 md:px-6 lg:px-8 mt-10"
       >
         <div class="w-20 h-20 md:w-auto md:h-auto">
@@ -305,9 +315,9 @@ const stepSecondData = {
           </span>
           <span class="text-secondary">creators have already started</span>
         </p>
-      </div>
+      </section>
+      <!-- ========= Get Started Now Section End ========= -->
 
-      <!-- ========= Step 6 End ========= -->
       <!-- ========= Footer Sart ========= -->
 
       <CFooter class="mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40" />
@@ -319,7 +329,7 @@ const stepSecondData = {
 
 <style scoped>
 .users {
-  background-image: url("/users.png");
+  background-image: url("/users.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -328,7 +338,7 @@ const stepSecondData = {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .users {
-    background-image: url("/users@2x.png");
+    background-image: url("/users@2x.webp");
   }
 }
 </style>

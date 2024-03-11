@@ -45,9 +45,11 @@
     <div class="w-auto mt-4 md:mt-0">
       <img
         class="right-0 relative w-auto h-auto"
-        :src="`${imageLink}.png`"
-        :srcset="`${imageLink}.png 1x, ${imageLink}@2x.png 2x`"
+        :src="`${imageLink}.webp`"
+        :srcset="`${imageLink}.webp 1x, ${imageLink}@2x.webp 2x`"
         alt="Steps image"
+        width="820"
+        height="680"
       />
     </div>
   </div>
