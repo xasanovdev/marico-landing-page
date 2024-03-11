@@ -4,6 +4,7 @@ import CButton from "./components/Base/CButton.vue";
 import CHeader from "./components/Layout/CHeader.vue";
 import SectionHeader from "./components/Base/SectionHeader.vue";
 import StepSection from "./components/Base/StepSection.vue";
+import CFooter from "./components/Base/CFooter.vue";
 
 const creatorsData = [
   {
@@ -299,6 +300,11 @@ const stepSecondData = {
       </div>
 
       <!-- ========= Step 6 End ========= -->
+      <!-- ========= Footer Sart ========= -->
+
+      <CFooter class="mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40" />
+
+      <!-- ========= Footer End ========= -->
     </main>
   </div>
 </template>
