@@ -123,7 +123,7 @@ const stepSecondData = {
               title="Connect Your Content"
               description="Bring all of your content together and get a Homepage that automatically updates whenever you create anywhere online."
             />
-            <CButton size="lg" variant="outline"
+            <CButton size="lg" role="button" variant="outline"
               >View Avaliable Sources</CButton
             >
           </div>
@@ -197,7 +197,7 @@ const stepSecondData = {
           </div>
 
           <div class="w-full flex items-center mt-[50px]">
-            <CButton class="mx-auto" size="lg" variant="primary"
+            <CButton class="mx-auto" role="button" size="lg" variant="primary"
               >Get Started</CButton
             >
           </div>
@@ -219,7 +219,7 @@ const stepSecondData = {
               title="Connect Your Content"
               description="Bring all of your content together and get a Homepage that automatically updates whenever you create anywhere online."
             />
-            <CButton size="lg" variant="outline"
+            <CButton size="lg" role="button" variant="outline"
               >View Avaliable Sources</CButton
             >
           </div>
@@ -297,7 +297,7 @@ const stepSecondData = {
           Setup is easy and takes under 5 minutes.
         </p>
 
-        <CButton class="mt-6" size="lg" variant="primary"
+        <CButton class="mt-6" role="button" size="lg" variant="primary"
           >Get Started Now</CButton
         >
 

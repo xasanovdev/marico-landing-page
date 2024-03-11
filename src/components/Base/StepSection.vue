@@ -35,9 +35,9 @@
         <div
           class="flex items-center gap-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-[50px] sm:gap-5 md:gap-[26px]"
         >
-          <CButton size="lg" variant="primary">Get Started Now</CButton>
+          <CButton size="lg" role="button" variant="primary">Get Started Now</CButton>
 
-          <CButton size="lg" variant="outline">View A Demo</CButton>
+          <CButton size="lg" role="button" variant="outline">View A Demo</CButton>
         </div>
       </div>
     </div>

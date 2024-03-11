@@ -5,6 +5,7 @@
       styles[variant],
       sizes[size],
     ]"
+    :role="role"
   >
     <slot></slot>
   </button>
@@ -20,6 +21,7 @@ const props = defineProps({
     type: String,
     default: "default",
   },
+  role: String,
 });
 
 const styles = {
