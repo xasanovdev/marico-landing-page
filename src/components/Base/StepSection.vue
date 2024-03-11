@@ -47,7 +47,7 @@
         class="right-0 relative w-auto h-auto"
         :src="`${imageLink}.png`"
         :srcset="`${imageLink}.png 1x, ${imageLink}@2x.png 2x`"
-        alt=""
+        alt="Steps image"
       />
     </div>
   </div>

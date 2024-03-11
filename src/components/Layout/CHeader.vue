@@ -20,7 +20,7 @@ const toggleMenu = () => {
     >
       <div class="max-w-large w-full mx-auto flex items-center justify-between">
         <div class="shrink-0 w-32">
-          <img src="/logo.svg" width="196" height="56" alt="" />
+          <img src="/logo.svg" width="196" height="56" alt="Logo image" />
         </div>
 
         <ul

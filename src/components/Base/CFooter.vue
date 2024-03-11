@@ -4,7 +4,7 @@
       class="container bg-black py-4 sm:flex-row flex-col sm:py-6 w-full mt-0 sticky top-0 px-4 md:px-6 lg:px-8 mx-auto max-w-large flex items-center justify-between"
     >
       <div class="shrink-0 w-40 md:w-auto flex flex-col gap-0.5">
-        <img src="/logo.svg" width="196" height="56" alt="" />
+        <img src="/logo.svg" width="196" height="56" alt="Logo image" />
 
         <p
           class="text-secondary text-[18px] sm:text-xl md:text-2xl lg:text-2xl"

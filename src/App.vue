@@ -165,7 +165,7 @@ const stepSecondData = {
               </CTitle>
 
               <div class="relative mt-4 right-0 bottom-0">
-                <img src="/phone.png" />
+                <img src="/phone.png" width="788" height="338" />
               </div>
             </div>
 
@@ -235,9 +235,17 @@ const stepSecondData = {
           <img
             class="md:w-1/2 w-full h-full object-cover"
             src="/twitter1.png"
-            alt=""
+            width="913"
+            height="441"
+            alt="Twitter screenshots about morico project"
           />
-          <img class="md:w-1/2 w-full h-full" src="/twitter2.png" alt="" />
+          <img
+            class="md:w-1/2 w-full h-full"
+            src="/twitter2.png"
+            width="913"
+            height="441"
+            alt="Twitter screenshots about morico project"
+          />
         </div>
       </div>
       <!-- ========= Step 4 End ========= -->
@@ -255,7 +263,7 @@ const stepSecondData = {
           class="right-0 w-full h-auto"
           src="/users.png"
           srcset="/users.png 1x, /users@2x.png 2x"
-          alt=""
+          alt="background users emoji image"
         />
       </div>
       <!-- ========= Step 5 End ========= -->
@@ -265,7 +273,7 @@ const stepSecondData = {
         class="w-full flex flex-col items-center container max-w-large mx-auto px-4 md:px-6 lg:px-8 mt-10"
       >
         <div class="w-20 h-20 md:w-auto md:h-auto">
-          <img width="164" height="151" src="/Logo.png" alt="" />
+          <img width="164" height="151" src="/Logo.png" alt="Logo image" />
         </div>
         <CTitle class="text-center max-w-[1236px]" size="extralarge"
           >Get Started Now</CTitle
