@@ -265,7 +265,7 @@ const stepSecondData = {
         class="w-full flex flex-col items-center container max-w-large mx-auto px-4 md:px-6 lg:px-8 mt-10"
       >
         <div class="w-20 h-20 md:w-auto md:h-auto">
-          <img width="164" height="151" src="/Logo.png" alt="" />
+          <img width="164" height="151" src="/logo.svg" alt="" />
         </div>
         <CTitle class="text-center max-w-[1236px]" size="extralarge"
           >Get Started Now</CTitle
