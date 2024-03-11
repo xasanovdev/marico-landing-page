@@ -1,6 +1,9 @@
 <script setup>
 import CTitle from "./components/Base/CTitle.vue";
+import CButton from "./components/Base/CButton.vue";
 import CHeader from "./components/Layout/CHeader.vue";
+import SectionHeader from "./components/Base/SectionHeader.vue";
+import StepSection from "./components/Base/StepSection.vue";
 
 const creatorsData = [
   {
@@ -22,46 +25,90 @@ const creatorsData = [
     subtitle: "Spend less time on marketing tools",
   },
 ];
+
+const stepFirstDataList = [
+  {
+    id: 1,
+    title: "Bring all of your content together into one homepage.",
+  },
+  {
+    id: 2,
+    title: "Your page automatically updates whenever you create.",
+  },
+];
+
+const stepFirstData = {
+  title: `Your Content. <br class="hidden md:block"/> All in. <span class="text-primary">One Spot</span>`,
+  text: "Your Homepage",
+  list: stepFirstDataList,
+  imageLink: "/Screen",
+};
 </script>
 
 <template>
   <div class="min-h-screen relative flex-col w-full">
     <CHeader />
 
-    <main class="w-full container max-w-large mx-auto px-4 md:px-6 lg:px-8">
-      <div class="mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-44">
-        <CTitle>Why Creators Love Marico</CTitle>
+    <main class="w-full">
+      <div class="container max-w-large mx-auto px-4 md:px-6 lg:px-8">
+        <div class="mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40">
+          <CTitle class="text-center">Why Creators Love Marico</CTitle>
 
-        <div
-          class="flex items-center mt-12 md:mt-16 lg:mt-20 xl:mt-24 flex-wrap flex-col sm:flex-row justify-between gap-4"
-        >
           <div
-            v-for="item in creatorsData"
-            :key="item?.id"
-            class="flex flex-col cursor-pointer gap-[10px] flex-1 text-center border-2 border-transparent w-full py-8 md:p-0 lg:p-8 rounded-2xl duration-200 hover:bg-zinc-600 sm:hover:bg-transparent lg:hover:bg-zinc-600 bg-opacity-10 hover:border-secondary sm:hover:border-transparent lg:hover:border-secondary"
+            class="flex items-center mt-12 md:mt-16 lg:mt-20 xl:mt-24 flex-wrap flex-col sm:flex-row justify-between gap-4"
           >
             <div
-              class="flex items-center flex-col xl:flex-row justify-center gap-[10px]"
+              v-for="item in creatorsData"
+              :key="item?.id"
+              class="flex flex-col cursor-pointer gap-[10px] flex-1 text-center border-2 border-transparent w-full py-8 md:p-0 lg:p-8 rounded-2xl duration-200 hover:bg-zinc-600 sm:hover:bg-transparent lg:hover:bg-zinc-600 bg-opacity-10 hover:border-secondary sm:hover:border-transparent lg:hover:border-secondary"
             >
-              <img
-                class="w-10 h-10 md:w-auto md:h-auto"
-                width="20"
-                height="20"
-                :src="item?.iconLink"
-                alt=""
-              />
-
-              <h3
-                class="text-xl md:text-2xl lg:text-3xl font-semibold text-white"
+              <div
+                class="flex items-center flex-col xl:flex-row justify-center gap-[10px]"
               >
-                {{ item?.title }}
-              </h3>
+                <img
+                  class="w-10 h-10 md:w-auto md:h-auto"
+                  width="20"
+                  height="20"
+                  :src="item?.iconLink"
+                  alt=""
+                />
+
+                <h3
+                  class="text-xl md:text-2xl lg:text-3xl font-semibold text-white"
+                >
+                  {{ item?.title }}
+                </h3>
+              </div>
+              <p class="text-base sm:text-xl md:text-[22px] text-secondary">
+                {{ item?.subtitle }}
+              </p>
             </div>
-            <p class="text-base sm:text-xl md:text-[22px] text-secondary">
-              {{ item?.subtitle }}
-            </p>
           </div>
         </div>
+      </div>
+
+      <div>
+        <div class="container max-w-large mx-auto px-4 md:px-6 lg:px-8">
+          <div
+            class="w-full flex flex-col items-center justify-center gap-4 xl:gap-[34px] mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40"
+          >
+            <SectionHeader
+              step="1"
+              title="Connect Your Content"
+              description="Bring all of your content together and get a Homepage that automatically updates whenever you create anywhere online."
+            />
+            <CButton size="lg" variant="outline"
+              >View Avaliable Sources</CButton
+            >
+          </div>
+        </div>
+
+        <StepSection
+          :title="stepFirstData?.title"
+          :text="stepFirstData?.text"
+          :list="stepFirstData?.list"
+          :imageLink="stepFirstData?.imageLink"
+        />
       </div>
     </main>
   </div>

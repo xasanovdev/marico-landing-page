@@ -67,7 +67,7 @@ const toggleMenu = () => {
     <div class="w-full container max-w-large mx-auto px-4 md:px-6 lg:px-8">
       <div class="w-full">
         <h1
-          class="text-white text-[42px] text-center sm:text-[56px] md:text-[64px] lg:text-[84px] xl:text-[96px] min-[1440px]:text-[112px] font-bold leading-[110%] flex flex-col justify-center items-center my-20 lg:my-24 xl:my-[140px]"
+          class="text-white text-[42px] text-center md:text-[48px] lg:text-[56px] xl:text-[72px] min-[1440px]:text-[84px] min-[1540px]:text-[96px] min-[1640px]:text-[112px] font-bold leading-[110%] flex flex-col justify-center items-center my-20 lg:my-24"
         >
           Own your audience.
           <span class="hero-text-gradient">So you don't lose them.</span>
@@ -80,22 +80,26 @@ const toggleMenu = () => {
           Turn your audience into email and text message subscribers.
         </p>
         <div
-          class="flex items-center gap-4 mt-6 sm:*:mt-8 md:mt-10 lg:mt-12 xl:mt-[50px] sm:gap-5 md:gap-[26px]"
+          class="flex items-center gap-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-[50px] sm:gap-5 md:gap-[26px]"
         >
           <CButton size="lg" variant="primary">Get Started Now</CButton>
           <CButton size="lg" variant="outline">View A Demo</CButton>
         </div>
 
         <p
-          class="w-full text-center gap-[10px] mt-5 flex items-center text-base md:text-xl xl:text-2xl justify-center"
+          class="w-full text-center gap-[10px] sm:flex-row flex-col mt-5 flex items-center text-base md:text-xl xl:text-2xl justify-center"
         >
-          <span
-            class="relative w-7 h-7 z-0 flex items-center justify-center bg-[#0FC65C] bg-opacity-50 rounded-full animate-pulse"
-          >
-            <span class="w-4 h-4 inline-block rounded-full bg-[#0FC65C]"></span>
-          </span>
+          <span class="flex items-center gap-[10px]">
+            <span
+              class="relative w-7 h-7 z-0 flex items-center justify-center bg-[#0FC65C] bg-opacity-50 rounded-full animate-pulse"
+            >
+              <span
+                class="w-4 h-4 inline-block rounded-full bg-[#0FC65C]"
+              ></span>
+            </span>
 
-          <span class="text-white font-bold">1000+</span>
+            <span class="text-white font-bold">1000+</span>
+          </span>
           <span class="text-secondary">creators have already started</span>
         </p>
       </div>
@@ -111,6 +115,18 @@ const toggleMenu = () => {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /* Menu Button 1 */

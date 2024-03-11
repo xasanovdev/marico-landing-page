@@ -32,7 +32,7 @@ const styles = {
 const sizes = {
   default: "text-base md:text-xl",
   md: "text-base md:text-xl sm:py-3 sm:px-5 py-2 px-4",
-  lg: "text-base md:text-xl max-w-[313px] w-full text-center py-4 md:py-5 lg:py-6",
+  lg: "text-base md:text-xl max-w-[313px] w-full text-center py-3 lg:py-5 xl:py-6",
 };
 </script>
 

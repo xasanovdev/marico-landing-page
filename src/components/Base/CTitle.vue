@@ -1,6 +1,6 @@
 <template>
   <h2
-    class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-[75px] text-center text-white font-semibold"
+    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-semibold"
   >
     <slot />
   </h2>
