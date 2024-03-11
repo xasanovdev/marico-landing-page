@@ -273,6 +273,8 @@ const stepSecondData = {
           src="/users.webp"
           srcset="/users.webp 1x, /users@2x.webp 2x"
           alt="background users emoji image"
+          width="1640"
+          height="600"
         />
       </section>
 
