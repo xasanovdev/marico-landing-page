@@ -1,14 +1,15 @@
 <template>
-  <div
-    class="flex items-center flex-col md:flex-row mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40"
-  >
+  <div class="flex items-center flex-col md:flex-row">
     <div class="mx-auto max-w-[767px] w-full px-4 md:px-6 lg:pl-8">
       <div class="w-full">
         <p class="text-white text-base sm:text-xl md:text-2xl lg:text-3xl">
-          Your Homepage
+          {{ text }}
         </p>
 
-        <CTitle class="md:text-left mt-6 sm:mt-12 md:mt-16 lg:mt-20">
+        <CTitle
+          size="default"
+          class="md:text-left mt-6 sm:mt-12 md:mt-16 lg:mt-20"
+        >
           <span v-html="title"></span>
         </CTitle>
 

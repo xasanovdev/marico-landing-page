@@ -15,9 +15,9 @@ defineProps({
     >
       Step {{ step }}
     </p>
-    <CTitle>{{ title }}</CTitle>
+    <CTitle size="default" class="my-4">{{ title }}</CTitle>
     <p
-      class="text-secondary mt-2 text-base sm:text-xl md:text-2xl lg:text-3xl max-w-[929px] text-center w-full mx-auto"
+      class="text-secondary text-base sm:text-xl md:text-2xl lg:text-3xl max-w-[929px] text-center w-full mx-auto"
     >
       {{ description }}
     </p>
