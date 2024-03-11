@@ -14,57 +14,61 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="w-full">
+  <header class="w-full relative">
     <nav
-      class="container z-10 bg-black py-4 sm:py-6 w-full mt-0 sticky top-0 px-4 md:px-6 lg:px-8 mx-auto max-w-large flex items-center justify-between"
+      class="z-10 bg-black py-4 sm:py-6 w-full mx-auto fixed top-0 mt-0 px-4 md:px-6 lg:px-8"
     >
-      <div class="shrink-0 w-32">
-        <img src="/logo.svg" width="196" height="56" alt="" />
-      </div>
+      <div class="max-w-large w-full mx-auto flex items-center justify-between">
+        <div class="shrink-0 w-32">
+          <img src="/logo.svg" width="196" height="56" alt="" />
+        </div>
 
-      <ul
-        :class="[isOpenMenu ? 'left-0' : 'left-[-100%]']"
-        class="flex items-center duration-200 bg-black md:left-0 md:relative md:top-0 md:flex-row md:h-auto md:w-auto absolute top-[72px] flex-col justify-center w-full h-[calc(100vh-72px)] text-xl text-secondary gap-6"
-      >
-        <li class="hover:text-primary duration-150">
-          <a href="#">Use Cases</a>
-        </li>
-        <li class="hover:text-primary duration-150">
-          <a href="#">About</a>
-        </li>
-        <li class="hover:text-primary duration-150">
-          <a href="#">Pricing</a>
-        </li>
-
-        <li class="hover:text-primary duration-150">
-          <a href="#">Blog</a>
-        </li>
-      </ul>
-
-      <div class="flex items-center gap-2 md:gap-4 lg:gap-6">
-        <CButton>Login </CButton>
-
-        <CButton variant="primary" size="md">Sign Up</CButton>
-
-        <CButton
-          variant="primary"
-          class="md:hidden w-10 h-10 sm:h-12 sm:w-12 flex items-center justify-center"
-          @click="toggleMenu"
+        <ul
+          :class="[isOpenMenu ? 'left-0' : 'left-[-100%]']"
+          class="flex items-center duration-200 bg-black md:left-0 md:relative md:top-0 md:flex-row md:h-auto md:w-auto absolute top-[72px] flex-col justify-center w-full h-[calc(100vh-72px)] text-xl text-secondary gap-6"
         >
-          <div
-            id="toggle-btn"
-            :class="{ active: isOpenMenu }"
-            class="menu-btn-1 relative"
+          <li class="hover:text-primary duration-150">
+            <a href="#">Use Cases</a>
+          </li>
+          <li class="hover:text-primary duration-150">
+            <a href="#">About</a>
+          </li>
+          <li class="hover:text-primary duration-150">
+            <a href="#">Pricing</a>
+          </li>
+
+          <li class="hover:text-primary duration-150">
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-2 md:gap-4 lg:gap-6">
+          <CButton>Login </CButton>
+
+          <CButton variant="primary" size="md">Sign Up</CButton>
+
+          <CButton
+            variant="primary"
+            class="md:hidden w-10 h-10 sm:h-12 sm:w-12 flex items-center justify-center"
+            @click="toggleMenu"
           >
-            <div class="menu-btn md:hidden">
-              <span></span>
+            <div
+              id="toggle-btn"
+              :class="{ active: isOpenMenu }"
+              class="menu-btn-1 relative"
+            >
+              <div class="menu-btn md:hidden">
+                <span></span>
+              </div>
             </div>
-          </div>
-        </CButton>
+          </CButton>
+        </div>
       </div>
     </nav>
 
-    <div class="w-full container max-w-large mx-auto px-4 md:px-6 lg:px-8">
+    <div
+      class="w-full container max-w-large mx-auto pt-20 px-4 md:px-6 lg:px-8"
+    >
       <div class="w-full">
         <h1
           class="text-white text-[42px] text-center md:text-[48px] lg:text-[56px] xl:text-[72px] min-[1440px]:text-[84px] min-[1540px]:text-[96px] min-[1640px]:text-[112px] font-bold leading-[110%] flex flex-col justify-center items-center my-20 lg:my-24"
