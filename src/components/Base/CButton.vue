@@ -1,5 +1,6 @@
 <template>
   <button
+    data-aos="zoom-in"
     :class="[
       'font-semibold tracking-wide rounded-lg whitespace-nowrap duration-200',
       styles[variant],

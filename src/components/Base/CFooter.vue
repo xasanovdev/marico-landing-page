@@ -14,7 +14,7 @@
       </div>
 
       <ul
-        class="flex items-center mt-4 sm:mt-0 duration-200 bg-black flex-col sm:flex-row sm:justify-end justify-center w-full text-xl text-secondary gap-3 md:gap-6"
+        class="flex items-center mt-4 sm:mt-0 text-base duration-200 bg-black flex-col sm:flex-row sm:justify-end justify-center w-full md:text-xl text-secondary gap-3 md:gap-6"
       >
         <li class="hover:text-primary duration-150">
           <a href="#">About</a>

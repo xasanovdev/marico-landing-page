@@ -2,7 +2,10 @@
   <div class="flex items-center flex-col md:flex-row">
     <div class="mx-auto max-w-[767px] w-full px-4 md:px-6 lg:pl-8">
       <div class="w-full">
-        <p class="text-white text-base sm:text-xl md:text-2xl lg:text-3xl">
+        <p
+          data-aos="zoom-in-up"
+          class="text-white text-base sm:text-xl md:text-2xl lg:text-3xl"
+        >
           {{ text }}
         </p>
 
@@ -17,6 +20,7 @@
           class="flex flex-col gap-[10px] mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-14"
         >
           <li
+            data-aos="zoom-in-up"
             v-for="(item, index) in list"
             :key="index"
             class="flex items-center gap-[13px]"
@@ -35,14 +39,18 @@
         <div
           class="flex items-center gap-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-[50px] sm:gap-5 md:gap-[26px]"
         >
-          <CButton size="lg" role="button" variant="primary">Get Started Now</CButton>
+          <CButton size="lg" role="button" variant="primary"
+            >Get Started Now</CButton
+          >
 
-          <CButton size="lg" role="button" variant="outline">View A Demo</CButton>
+          <CButton size="lg" role="button" variant="outline"
+            >View A Demo</CButton
+          >
         </div>
       </div>
     </div>
 
-    <div class="w-auto mt-4 md:mt-0">
+    <div data-aos="zoom-in-down" class="w-auto mt-4 md:mt-0">
       <img
         class="right-0 relative w-auto h-auto"
         :src="`${imageLink}.webp`"

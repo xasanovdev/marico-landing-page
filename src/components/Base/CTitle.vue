@@ -1,5 +1,9 @@
 <template>
-  <h2 :class="variantSizes[size]" class="text-white font-semibold">
+  <h2
+    data-aos="zoom-in-up"
+    :class="variantSizes[size]"
+    class="text-white font-semibold"
+  >
     <slot />
   </h2>
 </template>

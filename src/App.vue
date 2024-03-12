@@ -1,4 +1,7 @@
 <script setup>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import CTitle from "./components/Base/CTitle.vue";
 import CButton from "./components/Base/CButton.vue";
 import CHeader from "./components/Layout/CHeader.vue";
@@ -61,6 +64,8 @@ const stepSecondData = {
   list: stepSecondDataList,
   imageLink: "/Screen2",
 };
+
+AOS.init();
 </script>
 
 <template>
@@ -80,6 +85,7 @@ const stepSecondData = {
             class="flex items-center mt-12 md:mt-16 lg:mt-20 xl:mt-24 flex-wrap flex-col sm:flex-row justify-between gap-4"
           >
             <div
+              data-aos="fade-up"
               v-for="item in creatorsData"
               :key="item?.id"
               class="flex flex-col cursor-pointer gap-[10px] flex-1 text-center border-2 border-transparent w-full py-8 md:p-0 lg:p-8 rounded-2xl duration-200 hover:bg-zinc-600 sm:hover:bg-transparent lg:hover:bg-zinc-600 bg-opacity-10 hover:border-secondary sm:hover:border-transparent lg:hover:border-secondary"
@@ -157,6 +163,7 @@ const stepSecondData = {
               class="flex-1 w-full pl-6 md:pl-8 lg:pl-10 xl:pl-12 pt-6 md:pt-8 lg:pt-10 xl:pt-12 rounded-tl-[50px]"
             >
               <p
+                data-aos="zoom-in"
                 class="text-[#0FC65C] text-base sm:text-xl md:text-2xl lg:text-3xl"
               >
                 One Link
@@ -167,7 +174,7 @@ const stepSecondData = {
                 Link
               </CTitle>
 
-              <div class="relative mt-4 right-0 bottom-0">
+              <div data-aos="zoom-in" class="relative mt-4 right-0 bottom-0">
                 <img
                   src="/phone.webp"
                   width="788"
@@ -284,7 +291,7 @@ const stepSecondData = {
       <section
         class="w-full flex flex-col items-center container max-w-large mx-auto px-4 md:px-6 lg:px-8 mt-10"
       >
-        <div class="w-20 h-20 md:w-auto md:h-auto">
+        <div data-aos="fade-up" class="w-20 h-20 md:w-auto md:h-auto">
           <img width="164" height="151" src="/Logo.png" alt="Logo image" />
         </div>
         <CTitle class="text-center max-w-[1236px] mt-8" size="extralarge"
@@ -292,6 +299,7 @@ const stepSecondData = {
         >
 
         <p
+          data-aos="zoom-in-down"
           class="text-xl mt-6 text-center sm:text-2xl md:text-3xl text-white lg:text-[43px]"
         >
           Setup is easy and takes under 5 minutes.
@@ -302,6 +310,7 @@ const stepSecondData = {
         >
 
         <p
+          data-aos="zoom-in"
           class="w-full text-center gap-[10px] sm:flex-row flex-col mt-6 flex items-center text-base md:text-xl xl:text-2xl justify-center"
         >
           <span class="flex items-center gap-[10px]">

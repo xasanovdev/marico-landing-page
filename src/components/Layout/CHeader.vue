@@ -16,6 +16,7 @@ const toggleMenu = () => {
 <template>
   <header class="w-full relative">
     <nav
+      data-aos="zoom-in-up"
       class="z-10 bg-black py-4 sm:py-6 w-full mx-auto fixed top-0 mt-0 px-4 md:px-6 lg:px-8"
     >
       <div class="max-w-large w-full mx-auto flex items-center justify-between">
@@ -73,6 +74,7 @@ const toggleMenu = () => {
     >
       <div class="w-full">
         <h1
+          data-aos="fade-up"
           class="text-white text-[42px] text-center md:text-[48px] lg:text-[56px] xl:text-[72px] min-[1440px]:text-[84px] min-[1540px]:text-[96px] min-[1640px]:text-[112px] font-bold leading-[110%] flex flex-col justify-center items-center my-20 lg:my-24"
         >
           Own your audience.
@@ -81,6 +83,7 @@ const toggleMenu = () => {
       </div>
       <div class="w-full max-w-[694px] mx-auto">
         <p
+          data-aos="zoom-in"
           class="text-white text-[20px] text-center leading-tight sm:text-[24px] md:text-[32px] lg:text-[40px]"
         >
           Turn your audience into email and text message subscribers.
@@ -91,12 +94,14 @@ const toggleMenu = () => {
           <CButton size="lg" role="button" variant="primary"
             >Get Started Now</CButton
           >
+
           <CButton size="lg" role="button" variant="outline"
             >View A Demo</CButton
           >
         </div>
 
         <p
+          data-aos="zoom-in"
           class="w-full text-center gap-[10px] sm:flex-row flex-col mt-5 flex items-center text-base md:text-xl xl:text-2xl justify-center"
         >
           <span class="flex items-center gap-[10px]">
