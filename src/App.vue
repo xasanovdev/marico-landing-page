@@ -320,11 +320,11 @@ const stepSecondData = {
       </section>
       <!-- ========= Get Started Now Section End ========= -->
 
-      <!-- ========= Footer Sart ========= -->
+      <!-- ========= Footer Section Sart ========= -->
 
       <CFooter class="mt-16 sm:mt-20 md:mt-28 lg:mt-36 xl:mt-40" />
 
-      <!-- ========= Footer End ========= -->
+      <!-- ========= Footer Section End ========= -->
     </main>
   </div>
 </template>
